@@ -411,7 +411,7 @@ All API-related configurations are located in the `.env` file. You can modify th
 
 > **Note for Upgrading from v2.6**: If you are upgrading from a version prior to v2.6.8 and want to keep using the old environment variables, you can do so by modifying the start script flags accordingly:
 > - **Environment variables**: `RPC_API` / `WS_API` (separate APIs) instead of unified `API`; `RPC_ADDR` / `WS_ADDR` instead of unified `LISTEN_ADDR`; `RPC_CORS_DOMAIN` / `WS_ORIGINS` instead of unified `ALLOWED_ORIGINS`; `RPC_PORT`, `WS_PORT`, and `RPC_VHOSTS` remain unchanged
-> - **Flag names**: Replace `--http*` with `--rpc*` format (e.g., `--http-addr` → `--rpcaddr`, `--http-api` → `--rpcapi`, `--http-corsdomain` → `--rpccorsdomain`, `--http-vhosts` → `--rpcvhosts`)
+> - **Flag names**: Replace `--rpc*` with `--http*` format (e.g., `--rpcaddr` → `--http-addr`, `--rpcapi` → `--http-api`, `--rpccorsdomain` → `--http-corsdomain`, `--rpcvhosts` → `--http-vhosts`)
 
 
 ## Troubleshooting
